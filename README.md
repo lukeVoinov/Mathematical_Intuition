@@ -2,73 +2,130 @@
 
 ## Story and Motivation
 
-A few days ago, I was at my school's gym playing the best game of badminton of my life. During a break, I went to the nearest water fountain to fill up my water bottle but encountered an obstacle: the only way I could fill my bottle was by tilting it at an angle. This caused water to spill out before the bottle could be fully filled, leaving a substantial volume filled with air (insert photo of fountain with description: *"Water fountain in gym"*).
+A few days ago I was at my school's gym playing the best game of badminton in my life when we decided to stop for a break. I went to the nearest water fountain to fill up y water bottle but encountered an obstacle: the only way I could fill my bottle was if I tilted it at an angle. This then led to water spilling out before the entire bottle could fill, leaving a substantial volume filled with air (insert photo of fountain, description "water fountain in gym").  
 
-In computer science, we are taught to implement efficient algorithms and data structures, write efficient comments, and use AI to improve productivity (in other words, efficiency). Entire studies on artificial intelligence and algorithms are based on the foundational concept of Big O notation. It is the job of colleges to instill a desire for efficiency in computer science students, which might explain why I was annoyed that my bottle wasn’t completely filled. Why make a second trip to the fountain when one would suffice?
+In computer science we are taught to implement efficient algorithms and data structures; to write efficient comments; to use AI to improve productivity (another words for efficiency). Entire studies on artificial intelligence and algorithms would be impossible to conduct without the foundational Big O notation. It is the job of colleges to engrain a desire for efficiency in their computer science students, which would explain the reason I was annoyed that my bottle was not completely filled. Why make a second trip to the fountain where one would have sufficed?  
 
-This project goes beyond a simple annoyance: I wanted to understand what it looks like when physicists employ critical and creative thinking (albeit at a much more sophisticated level). I also wanted to prove to myself that I am not wasting time in school, that I have learned something meaningful, and that I can apply that knowledge. This project served as a fun logic puzzle and demonstrated the conceptual process of a physicist without being overly complex or detached from personal experience. I discuss my takeaways in the *Conclusions* section.
+Whatever prompted me to do all this math and writing goes beyond just a simple annoyance: I wanted to do this project to try and understand what it looks like when physicists employ (albeit at a much more sophisticated level) critical and creative thinking. I also wanted to prove to myself that I am not wasting time in school: that I have learned something, in the first place, and that I am able to apply that something. This project is a very nice way to demonstrate the conceptual process of a physicist without making it too complex or detached from personal experience. Therefore this project acted as a fun logic puzzle that demonstrated to me that I am actually able to apply what I have learned. I discuss some takeaways in the Conclusions section.  
 
 ---
 
 ## The Problem
 
-**Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled?**
+**Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled?**  
 
 ---
 
 ## Background + Logic
 
-Imagine we have a water bottle that can store **L** liters of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled with **L** liters. This can only happen if the maximum height of the stream (**s**) is greater than the height of the bottle (**b**). If **s** is less than **b**, water will splash against the side of the bottle and fail to enter. Under these conditions, the water bottle must be tilted at some angle for any water to enter. However, from physical observations, this results in some water spilling out before the bottle is filled to capacity.
+Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
-Mathematically, the conditions can be represented as follows:
+Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
 
-- If **s > b**, the bottle will be filled with **L** liters:  
-  **l = L**, where **0 ≤ l ≤ L**.
-- If **s > b**, the optimal angle for maximum filling is **90°** (upright).  
-  This leads to a key conclusion:  
-  **A bottle will always be filled maximally if it is at a 90° angle.**  
-  The closer the bottle's angle is to 90°, the more likely it will fill completely without spilling.
+Mathematically, we can represent how many liters a bottle can be maximally filled with as such:  
 
-What happens when **s = b**?  
-If **s = b**, logically, the water bottle can still be filled maximally. Since the stream has a certain width, part of it enters the bottle while the rest spills over. However, if we restrict conditions so that the stream cannot spill over the bottle (a "straight shot" into the bottle), then the results change: 90° may no longer be optimal.
+- **s > b → l = L**, where **s** is the height of the stream, **b** is the height of the bottle, and **l** is a particular but arbitrary literage of water such that it satisfies the following conditions:  
+  **0 ≤ l ≤ L.**  
 
----
+When **s > b**, then, we can answer the question posed:  
+**What angle must a bottle be oriented at with respect to ground such that it will be maximally filled?**  
 
-## The Incomplete Theory
+At a **90-degree angle**!  
 
-The situation becomes more complex when **s < b** (the stream is shorter than the bottle). In this case:
-- Water begins to spill out before the bottle is filled with **L** liters.
-- The maximum water the bottle can hold will be **l**, where **l < L**.
+This leads to a key conclusion:  
+**A bottle will always be filled maximally if it is at a 90-degree angle.**  
 
-To simplify this scenario, we can transform the **s < b** condition into an equivalent **s = b** frame. Why?  
-- The **s = b** frame is simpler and avoids unnecessary complexity in calculations.  
-- This transformation is analogous to centering a function (e.g., shifting **y = x²** by subtracting 5 units when the vertex moves 5 units right).
+Further thought will show an important corollary of this fact:  
+**The bottle will be filled maximally if it is the closest to 90 degrees as it can be.**  
 
----
+If the bottle is upright, water can only spill out once the bottle is completely filled. Thus, if **s > b**, the bottle will stand at a 90-degree angle (the closest to 90 degrees the bottle can be is 90 degrees) to be filled with **L** liters.  
 
-### Validation of the Transformation
+### Case: What If **s = b**?  
 
-Consider two bottles, one with height **B** and another with height **b**, and a stream of height **S** where:  
-**0 < b < S < B**
-
-- Bottle **B** must tilt to fill with water because **B > S**.  
-- Bottle **b** can remain upright and fill maximally because **b < S**.
-
-If we tilt bottle **B** such that water enters at the same rate it spills, the bottle will fill partially. By cutting off the part of the bottle filled with air, we effectively reduce **B** to a new bottle with height equal to the distance from the ground to the water level. This new bottle behaves as if **s = b**. (Insert diagram here.)
+Logically, if **s = b**, then the water bottle will also be maximally filled. The assumption here is that the stream has a certain width, part of it fills the bottle while the other part spills over. If we restrict the conditions to be such that the stream is not allowed to spill over the bottle—a "straight shot" into the bottle—then the results will be different to the extent that if **s = b**, then 90 degrees will no longer be the optimal solution.  
 
 ---
 
-## Calculations
+### Incomplete Theory  
 
-(*Placeholder for mathematical derivations.*)
+Our theory now covers a large portion of what angle a bottle must be leaned at such that it will be maximally filled with water. We know that if the height of the stream is either above or at the same height as that of the bottle, the bottle will maximally fill if it stands at a 90-degree angle with respect to the ground. If we only ever encounter water in such situations, then our theory is complete, and it would be difficult to even ask such a question in the first place.  
+
+However, when I was filling my water bottle, I encountered the scenario where my bottle was taller than the stream.  
+
+In this scenario, it is more difficult to say exactly what angle a bottle must be leaned at for it to maximally hold water. A few key observations are that no matter how many angles I experiment tilting the bottle at, water will eventually start to flow out of the bottle, making it impossible to ever fill the bottle with **L** liters.  
+
+This is where the application value of posing this question arises—it would be ideal if the bottle held all the water it can given certain constraints.  
 
 ---
 
-## Conclusion
+### Towards a Partial Explanation  
 
-### Key Takeaways:
-- Patience and the importance of verifying solutions.
-- The process of converting a concept or idea into mathematical terms.
-- An appreciation for what I enjoy and how to make theoretical ideas applicable.
+The theory is now shown to be incomplete. We do not know how we should orient our water bottle if it is taller than the stream. A move in the right direction would be to provide a partial explanation. Such an explanation will not be able to accurately predict the specific conditions necessary to fill the bottle maximally (hence "partial") but it will impose tighter bounds on the range of possible outcomes and describe general behavior.  
 
-This project was a practical exercise in logic and creative thinking, reminding me that the principles we learn in class can have real-world applications.
+A partial explanation would be the observation that since water will begin to pour out before the bottle fills to **L** (the maximum capacity when standing 90 degrees), the maximum amount of water the bottle will hold will be **l**, where **l < L**.  
+
+This partial explanation then limits what values we should expect to detect under such conditions and describes that the general behavior of the bottle under the condition **s < b** is to have a lower capacity than in the previous conditions.  
+
+---
+
+### Transforming the Frame  
+
+Another useful aspect of this partial theory is that we can now come to an important tool:  
+
+A bottle in conditions **s < b** can be transformed into an **s = b** frame.  
+
+This means that we no longer have to work with the bottle under **s < b** conditions—we can now work with bottles under **s = b** conditions.  
+
+Why would we want to do this?  
+
+Mainly because the **s = b** frame is much simpler. This part of the theory was the most straightforward to solve because it was so simple.  
+
+This is partially where the "elegance" of a proof comes from—the bridge formed when modern ideas harken back to classical (less complex) ideas. We've been transforming to simpler frames ever since elementary school!  
+
+For example, only variables are present in **y = x²**, which is centered at the origin. When the function is centered 5 units to the right of the origin, however, we "pull" it back to the origin by subtracting 5 units (or alternately create an effective new origin at this location; the two are equivalent).  
+
+---
+
+### Validation  
+
+Having established the value and uses behind this tool, one may wonder whether the conclusion we came to is even valid. How can we transform from an **s > b** frame to an **s = b** frame?  
+
+Suppose two bottles exist, one of height **B** and the other of height **b**. Also suppose there is a stream of height **S**. Let **0 < b < S < B.**  
+
+Because **B < S**, **B** must be tilted at an angle if it is to fill with any water at all, and because **b < S**, it can stand upright and fill maximally.  
+
+If we will fill the bottle of height **B** with the maximum amount of water it can store when water begins to pour out at the same rate it's entering. Then, if we tilt the bottle to an upright position, it will be filled with a certain amount of air and water. Cutting off the part of the bottle filled with air, the resulting bottle is now an upright bottle filled, relative to itself, with **L** liters.  
+
+It is easy to see that the height of this resulting bottle will be the same as the distance from the ground to the lid of the bottle with height **B**: (enter diagram).  
+
+---
+
+## Calculations  
+
+The water will be shot as a parabola. To fill maximally, a bottle must be tilted such that the bottle's edge intersects the parabola's maximum. To see why, we can return to the s = b frame. If an upright bottle of the same height as that of a stream is shifted a little bit to the left of the maximu, the water will hit the wall of the bottle and never enter. The same will happen if the bottle is moved slightly to the right of the maximum. Thus, if in the frame s = b the bottle only fills at the heighest point of the stream, which is s, then it makes sense to conclude that the heighest point of the stream will always be the point in the stream the bottle can be maximlly fileld at.
+
+We will call the height of the stream, in this case, **s = y**, and the height of the bottle will be **h = y + delta_y**, where **delta_y > 0**. Leaning the bottle such that it interescts the stream, we form a right triangle, where the hypotenuse is **h** and the height is **s**. Then, to find the angle the bottle is tilted at with respect to the ground, we use trigonometry to find:
+
+**sin(theta) = (s/h) **. Solving for theta, **theta = arcsin(s/h) = arcsin( y / (y + delta_y)**.
+
+## Testing the Equation
+
+Before incorporating the result into our theory, we need to make sure it's correct. A good way to do this is to look at how it works at extremes. What happens when the height of the bottle approaches that of the stream? 
+
+**lim delta_y -> 0 arcsin ( y / (y+ delta_y) ) = arcsin(1) = 90 degrees**. This is exactly what we predicted earlier. Now, what if the bottle is infinitely tall?
+
+**lim delta_y -> infinity arcsin ( y / (y + delta_y) ) = arcsin(0) = 0 degrees**. Imagine a bottle titled at the point where it intersects the maximum height of the stream. Its two restrictions are 1) the ground and 2) the intersection. Then If we elongate the bottle, the ground will now interfere with the intersection point. To return the bottle opening to the intersection point, it must now be shifted down, which will in turn decrease the angle the bottle is titled at. DElongating the bottle to infinity, then, must reult in the bottle being bottle being at a 0 degree angle with respect to the groud; that is, it will be held parallel to the stream at its peak. What if the bottle is less than the height of the stream?
+
+**arcsin ( y / (y - delta_y) )**. This means that the numberator will be larger than the denominator, which in arsin results in **undefined**. This also checks out because this tests when b < s, which is in contradiction to the condition that b > s. Notice that just because we found the solution to the problem under this condtions, it doesn;t solve for every condition - it is undefined in the domain where b < s and we must examine that domain seperately. 
+
+
+
+---
+
+## Conclusion  
+
+### What did I learn:  
+- Patience  
+- Verifying solutions  
+- What I enjoy  
+- How to convert a concept/idea into math  
