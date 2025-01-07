@@ -18,6 +18,9 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 ## Background + Logic
 
+![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52)
+
+
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
 Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
@@ -96,7 +99,7 @@ Because **B < S**, **B** must be tilted at an angle if it is to fill with any wa
 
 If we will fill the bottle of height **B** with the maximum amount of water it can store when water begins to pour out at the same rate it's entering. Then, if we tilt the bottle to an upright position, it will be filled with a certain amount of air and water. Cutting off the part of the bottle filled with air, the resulting bottle is now an upright bottle filled, relative to itself, with **L** liters.  
 
-It is easy to see that the height of this resulting bottle will be the same as the distance from the ground to the lid of the bottle with height **B**: (enter diagram).  
+This is of the same essence as the Intermediate Value Theorem. It is easy to see that the height of this resulting bottle will be the same as the distance from the ground to the lid of the bottle with height **B**.: (enter diagram).  
 
 ---
 
@@ -116,7 +119,7 @@ Before incorporating the result into our theory, we need to make sure it's corre
 
 **lim delta_y -> infinity arcsin ( y / (y + delta_y) ) = arcsin(0) = 0 degrees**. Imagine a bottle titled at the point where it intersects the maximum height of the stream. Its two restrictions are 1) the ground and 2) the intersection. Then If we elongate the bottle, the ground will now interfere with the intersection point. To return the bottle opening to the intersection point, it must now be shifted down, which will in turn decrease the angle the bottle is titled at. DElongating the bottle to infinity, then, must reult in the bottle being bottle being at a 0 degree angle with respect to the groud; that is, it will be held parallel to the stream at its peak. What if the bottle is less than the height of the stream?
 
-**arcsin ( y / (y - delta_y) )**. This means that the numberator will be larger than the denominator, which in arsin results in **undefined**. This also checks out because this tests when b < s, which is in contradiction to the condition that b > s. Notice that just because we found the solution to the problem under this condtions, it doesn;t solve for every condition - it is undefined in the domain where b < s and we must examine that domain seperately. 
+**arcsin ( y / (y - delta_y) )**. This means that the numberator will be larger than the denominator, which in arsin results in **undefined**. This also checks out because this tests when b < s, which is in contradiction to the condition that b > s. Notice that just because we found the solution to the problem under this condtions, it doesn't solve for every condition - it is undefined in the domain where b < s and we must examine that domain seperately. 
 
 
 
