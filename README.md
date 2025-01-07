@@ -19,9 +19,12 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 ## Background + Logic
 
 ![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52)
+A water bottle, where the dark blue line is it abstracted as a line.
 
 
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
+
+![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476)
 
 Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
 
@@ -53,9 +56,13 @@ Logically, if **s = b**, then the water bottle will also be maximally filled. Th
 
 Our theory now covers a large portion of what angle a bottle must be leaned at such that it will be maximally filled with water. We know that if the height of the stream is either above or at the same height as that of the bottle, the bottle will maximally fill if it stands at a 90-degree angle with respect to the ground. If we only ever encounter water in such situations, then our theory is complete, and it would be difficult to even ask such a question in the first place.  
 
+![image](https://github.com/user-attachments/assets/01429f4e-7090-4d23-a860-6ade80430478)
+
 However, when I was filling my water bottle, I encountered the scenario where my bottle was taller than the stream.  
 
 In this scenario, it is more difficult to say exactly what angle a bottle must be leaned at for it to maximally hold water. A few key observations are that no matter how many angles I experiment tilting the bottle at, water will eventually start to flow out of the bottle, making it impossible to ever fill the bottle with **L** liters.  
+
+![image](https://github.com/user-attachments/assets/a20aa190-75d5-405a-ae89-2e7a6c578ad0)
 
 This is where the application value of posing this question arises—it would be ideal if the bottle held all the water it can given certain constraints.  
 
@@ -99,7 +106,10 @@ Because **B < S**, **B** must be tilted at an angle if it is to fill with any wa
 
 If we will fill the bottle of height **B** with the maximum amount of water it can store when water begins to pour out at the same rate it's entering. Then, if we tilt the bottle to an upright position, it will be filled with a certain amount of air and water. Cutting off the part of the bottle filled with air, the resulting bottle is now an upright bottle filled, relative to itself, with **L** liters.  
 
-This is of the same essence as the Intermediate Value Theorem. It is easy to see that the height of this resulting bottle will be the same as the distance from the ground to the lid of the bottle with height **B**.: (enter diagram).  
+This is of the same essence as the Intermediate Value Theorem. It is easy to see that the height of this resulting bottle will be the same as the distance from the ground to the lid of the bottle with height **B**.
+
+![image](https://github.com/user-attachments/assets/fe5cb191-98ae-4e56-99f7-99813ee3579d)
+
 
 ---
 
@@ -107,20 +117,27 @@ This is of the same essence as the Intermediate Value Theorem. It is easy to see
 
 The water will be shot as a parabola. To fill maximally, a bottle must be tilted such that the bottle's edge intersects the parabola's maximum. To see why, we can return to the s = b frame. If an upright bottle of the same height as that of a stream is shifted a little bit to the left of the maximu, the water will hit the wall of the bottle and never enter. The same will happen if the bottle is moved slightly to the right of the maximum. Thus, if in the frame s = b the bottle only fills at the heighest point of the stream, which is s, then it makes sense to conclude that the heighest point of the stream will always be the point in the stream the bottle can be maximlly fileld at.
 
-We will call the height of the stream, in this case, **s = y**, and the height of the bottle will be **h = y + delta_y**, where **delta_y > 0**. Leaning the bottle such that it interescts the stream, we form a right triangle, where the hypotenuse is **h** and the height is **s**. Then, to find the angle the bottle is tilted at with respect to the ground, we use trigonometry to find:
+![image](https://github.com/user-attachments/assets/6f277f45-e51d-4a1d-9a20-12a3c20105bb)
 
-**sin(theta) = (s/h) **. Solving for theta, **theta = arcsin(s/h) = arcsin( y / (y + delta_y)**.
+
+We will call the height of the stream, in this case, **y = s**, and the height of the bottle will be **h = s + delta_s**, where **delta_s > 0**. Leaning the bottle such that it interescts the stream, we form a right triangle, where the hypotenuse is **h** and the height is **s**. Then, to find the angle the bottle is tilted at with respect to the ground, we use trigonometry to find:
+
+**sin(theta) = (s/h) **. Solving for theta, **theta = arcsin(s/h) = arcsin( s / (s + delta_s)**.
+
+![image](https://github.com/user-attachments/assets/c4506439-a2b4-443d-9c94-7aa1eb7dbb6e)
+
 
 ## Testing the Equation
 
 Before incorporating the result into our theory, we need to make sure it's correct. A good way to do this is to look at how it works at extremes. What happens when the height of the bottle approaches that of the stream? 
 
-**lim delta_y -> 0 arcsin ( y / (y+ delta_y) ) = arcsin(1) = 90 degrees**. This is exactly what we predicted earlier. Now, what if the bottle is infinitely tall?
+**lim delta_s -> 0 arcsin ( s / (s+ delta_s) ) = arcsin(1) = 90 degrees**. This is exactly what we predicted earlier. Now, what if the bottle is infinitely tall?
 
-**lim delta_y -> infinity arcsin ( y / (y + delta_y) ) = arcsin(0) = 0 degrees**. Imagine a bottle titled at the point where it intersects the maximum height of the stream. Its two restrictions are 1) the ground and 2) the intersection. Then If we elongate the bottle, the ground will now interfere with the intersection point. To return the bottle opening to the intersection point, it must now be shifted down, which will in turn decrease the angle the bottle is titled at. DElongating the bottle to infinity, then, must reult in the bottle being bottle being at a 0 degree angle with respect to the groud; that is, it will be held parallel to the stream at its peak. What if the bottle is less than the height of the stream?
+**lim delta_s -> infinity arcsin ( s / (s + delta_s) ) = arcsin(0) = 0 degrees**. Imagine a bottle titled at the point where it intersects the maximum height of the stream. Its two restrictions are 1) the ground and 2) the intersection. Then If we elongate the bottle, the ground will now interfere with the intersection point. To return the bottle opening to the intersection point, it must now be shifted down, which will in turn decrease the angle the bottle is titled at. DElongating the bottle to infinity, then, must reult in the bottle being bottle being at a 0 degree angle with respect to the groud; that is, it will be held parallel to the stream at its peak. What if the bottle is less than the height of the stream?
 
-**arcsin ( y / (y - delta_y) )**. This means that the numberator will be larger than the denominator, which in arsin results in **undefined**. This also checks out because this tests when b < s, which is in contradiction to the condition that b > s. Notice that just because we found the solution to the problem under this condtions, it doesn't solve for every condition - it is undefined in the domain where b < s and we must examine that domain seperately. 
+**arcsin ( s / (s - delta_s) )**. This means that the numberator will be larger than the denominator, which in arsin results in **undefined**. This also checks out because this tests when b < s, which is in contradiction to the condition that b > s. Notice that just because we found the solution to the problem under this condtions, it doesn't solve for every condition - it is undefined in the domain where b < s and we must examine that domain seperately. 
 
+![image](https://github.com/user-attachments/assets/3c320ca9-5167-4760-a00a-f97c15e2189d)
 
 
 ---
