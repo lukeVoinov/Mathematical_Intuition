@@ -1,4 +1,6 @@
-<span align="center"><h1> Maximizing Water Stored in a Bottle Tilted at an Angle <h1></span>
+<h1 align="center"> Maximizing Water Stored in a Bottle Tilted at an Angle </h1>
+
+<span align="center"> <h1> :star: My Career: </h1> </span>
 
 <div align="center"> ## Story and Motivation </div>
 
