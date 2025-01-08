@@ -11,7 +11,7 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 ---
 
-<h3 align="center"> ## The Problem </h3>
+<h2 align="center"> ## The Problem </h3>
 
 <h3 align="center"> **Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled?** </h3>
 
@@ -19,14 +19,14 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 <h3 align="center">## Background + Logic </h3>
 
-<h3 align="center"> ![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) </h3>
+![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52)
 
-<h3 align="center"> A water bottle, where the dark blue line is it abstracted as a line. </h3>
+A water bottle, where the dark blue line is it abstracted as a line. 
 
 
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
-<div align="center"> ![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476) </div>
+![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476)
 
 Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
 
@@ -48,13 +48,13 @@ Further thought will show an important corollary of this fact:
 
 If the bottle is upright, water can only spill out once the bottle is completely filled. Thus, if **s > b**, the bottle will stand at a 90-degree angle (the closest to 90 degrees the bottle can be is 90 degrees) to be filled with **L** liters.  
 
-### Case: What If **s = b**?  
+<h3 align="center"> ### Case: What If **s = b**? </h3>
 
 Logically, if **s = b**, then the water bottle will also be maximally filled. The assumption here is that the stream has a certain width, part of it fills the bottle while the other part spills over. If we restrict the conditions to be such that the stream is not allowed to spill over the bottle—a "straight shot" into the bottle—then the results will be different to the extent that if **s = b**, then 90 degrees will no longer be the optimal solution.  
 
 ---
 
-### Incomplete Theory  
+<h3 align="center"> Incomplete Theory </h3>
 
 Our theory now covers a large portion of what angle a bottle must be leaned at such that it will be maximally filled with water. We know that if the height of the stream is either above or at the same height as that of the bottle, the bottle will maximally fill if it stands at a 90-degree angle with respect to the ground. If we only ever encounter water in such situations, then our theory is complete, and it would be difficult to even ask such a question in the first place.  
 
@@ -70,7 +70,7 @@ This is where the application value of posing this question arises—it would be
 
 ---
 
-### Towards a Partial Explanation  
+<h3 align="center"> Towards a Partial Explanation </h3> 
 
 The theory is now shown to be incomplete. We do not know how we should orient our water bottle if it is taller than the stream. A move in the right direction would be to provide a partial explanation. Such an explanation will not be able to accurately predict the specific conditions necessary to fill the bottle maximally (hence "partial") but it will impose tighter bounds on the range of possible outcomes and describe general behavior.  
 
@@ -80,7 +80,7 @@ This partial explanation then limits what values we should expect to detect unde
 
 ---
 
-### Transforming the Frame  
+<h3 align="center"> Transforming the Frame </h3> 
 
 Another useful aspect of this partial theory is that we can now come to an important tool:  
 
@@ -98,7 +98,7 @@ For example, only variables are present in **y = x²**, which is centered at the
 
 ---
 
-### Validation  
+<h3 align="center"> Validation </h3>
 
 Having established the value and uses behind this tool, one may wonder whether the conclusion we came to is even valid. How can we transform from an **s > b** frame to an **s = b** frame?  
 
@@ -115,7 +115,7 @@ This is of the same essence as the Intermediate Value Theorem. It is easy to see
 
 ---
 
-## Calculations  
+<h3 align="center"> Calculations </h3>
 
 The water will be shot as a parabola. To fill maximally, a bottle must be tilted such that the bottle's edge intersects the parabola's maximum. To see why, we can return to the s = b frame. If an upright bottle of the same height as that of a stream is shifted a little bit to the left of the maximu, the water will hit the wall of the bottle and never enter. The same will happen if the bottle is moved slightly to the right of the maximum. Thus, if in the frame s = b the bottle only fills at the heighest point of the stream, which is s, then it makes sense to conclude that the heighest point of the stream will always be the point in the stream the bottle can be maximlly fileld at.
 
@@ -129,7 +129,7 @@ We will call the height of the stream, in this case, **y = s**, and the height o
 ![image](https://github.com/user-attachments/assets/c4506439-a2b4-443d-9c94-7aa1eb7dbb6e)
 
 
-## Testing the Equation
+<h3 align="center"> Testing the Equation </h3>
 
 Before incorporating the result into our theory, we need to make sure it's correct. A good way to do this is to look at how it works at extremes. What happens when the height of the bottle approaches that of the stream? 
 
