@@ -1,4 +1,4 @@
-<div align="center"> # Maximizing Water Stored in a Bottle Tilted at an Angle </div>
+<span align="center"> # Maximizing Water Stored in a Bottle Tilted at an Angle </span>
 
 <div align="center"> ## Story and Motivation </div>
 
