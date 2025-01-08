@@ -1,4 +1,5 @@
-<h1 align="center"> Mathematical Intuition: Maximizing Water Stored in a Bottle Tilted at an Angle </h1>
+<h1 align="center"> Mathematical Intuition </h1>
+<h3 align="center">Maximizing Water Stored in a Bottle Tilted at an Angle </h3>
 
 
 <h3 align="center"> ## Story and Motivation </h3>
