@@ -4,25 +4,25 @@
 
 <h2 align="center"> Story and Motivation </h2>
 
-A few days ago I was at my school's gym playing the best game of badminton in my life when we decided to stop for a break. I went to the nearest water fountain to fill up y water bottle but encountered an obstacle: the only way I could fill my bottle was if I tilted it at an angle. This then led to water spilling out before the entire bottle could fill, leaving a substantial volume filled with air (insert photo of fountain, description "water fountain in gym").  
+Some time ago I was at my school's gym playing a game of badminton when we decided to stop for a break. I went to the nearest water fountain to fill up my water bottle but encountered a problem: the only way I could fill my bottle was if I tilted it at an angle. This then led to water spilling out before the entire bottle could fill, leaving a substantial volume filled with air:
 
-In computer science we are taught to implement efficient algorithms and data structures; to write efficient comments; to use AI to improve productivity (another words for efficiency). Entire studies on artificial intelligence and algorithms would be impossible to conduct without the foundational Big O notation. It is the job of colleges to engrain a desire for efficiency in their computer science students, which would explain the reason I was annoyed that my bottle was not completely filled. Why make a second trip to the fountain where one would have sufficed?  
+![IMG_3923](https://github.com/user-attachments/assets/b80ab266-33b5-4354-aad9-8386394fa838)
 
-Whatever prompted me to do all this math and writing goes beyond just a simple annoyance: I wanted to do this project to try and understand what it looks like when physicists employ (albeit at a much more sophisticated level) critical and creative thinking. I also wanted to prove to myself that I am not wasting time in school: that I have learned something, in the first place, and that I am able to apply that something. This project is a very nice way to demonstrate the conceptual process of a physicist without making it too complex or detached from personal experience. Therefore this project acted as a fun logic puzzle that demonstrated to me that I am actually able to apply what I have learned. I discuss some takeaways in the Conclusions section.  
+In computer science we are taught to implement efficient algorithms and data structures; to write efficient comments; to use AI to improve productivity. Entire studies on artificial intelligence and algorithms would be impossible to conduct without the foundational Big O notation. It is the job of colleges to engrain a desire for efficiency in their computer science students, which would explain the reason I set out to quantify how to optimize water storage under such conditions. Why make a second trip to the fountain where one would have sufficed?  
+
+Whatever prompted me to do all this math and writing goes beyond just a simple annoyance: I wanted to do this project to try and understand what it looks like when physicists employ (albeit at a much more sophisticated level) critical and creative thinking. I also wanted to prove to myself that I am not wasting time in school: that I have learned something, in the first place, and that I am able to apply that something. This project is a very nice way to demonstrate (what seems to me) the conceptual process of a physicist without making it too complex or detached from personal experience. This project acted as a fun logic puzzle that demonstrated to me that I am actually able to apply what I have learned. I discuss some takeaways in the Conclusions section.  
 
 ---
 
 <h2 align="center"> The Problem </h2>
 
-<h2 align="center"> **Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled?** </h2>
+<h2 align="center"> Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled? </h2>
 
 ---
 
 <h2 align="center"> Background + Logic </h2>
 
-![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52)
-
-A water bottle, where the dark blue line is it abstracted as a line. 
+![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) 
 
 
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
