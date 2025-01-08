@@ -28,32 +28,30 @@ Water Bottle               |  Abstraction
 ![Inspirational water bottle next to water fountain](https://github.com/user-attachments/assets/43aeba15-0f60-4272-b58b-d999ea3bdf1d)  |  ![Abstraction of a water bottle where the dark blue edge is a further abstraction of the entire bottle](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) 
 
 
-Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
+Imagine we have a water bottle that can store **L** liters of water, where **L** is the maximum the bottle can hold. Ideally, we want it to be filled **L** liters. We know from experimental (in essence personal) that this happens when the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, e.g.)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
 ![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476) 
 
-
-Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
-
 Mathematically, we can represent how many liters a bottle can be maximally filled with as such:  
 
-- **s > b → l = L**, where **s** is the height of the stream, **b** is the height of the bottle, and **l** is a particular but arbitrary literage of water such that it satisfies the following conditions:  
-  **0 ≤ l ≤ L.**  
+- **s > b → l = L**
+  
+Let **s** be the height of the stream, **b** the height of the bottle, and **l** a particular but arbitrary literage of water such that it satisfies the following conditions:  **0 ≤ l ≤ L.**  
 
 When **s > b**, then, we can answer the question posed:  
-**What angle must a bottle be oriented at with respect to ground such that it will be maximally filled?**  
 
-At a **90-degree angle**!  
+Q: **What angle must a bottle be oriented at with respect to ground such that it will be maximally filled?**  
+A: At a **90-degree angle**!  
 
-This leads to a key conclusion:  
-**A bottle will always be filled maximally if it is at a 90-degree angle.**  
+We can rephrase the answer in quantitatively:  
+**If the height of the strema is greater than the height of the bottle, a bottle will always be filled maximally if it is at a 90-degree angle.**  
 
-Further thought will show an important corollary of this fact:  
-**The bottle will be filled maximally if it is the closest to 90 degrees as it can be.**  
+Further consideration will show an important corollary of this fact:  
+**The bottle will be filled to its fullest possible capacity the closer it is to being at a 90 degree angle with respect to the ground**  
 
-If the bottle is upright, water can only spill out once the bottle is completely filled. Thus, if **s > b**, the bottle will stand at a 90-degree angle (the closest to 90 degrees the bottle can be is 90 degrees) to be filled with **L** liters.  
+The first statement is a specific instance of the general corollary. The bottle does indeed fill to its absolute possible capacity, L, at a 90 degree angle. What if we make the bottle very slightly higher than the stream? Then we must tilt the bottle very slightly, say 0.001 degrees to the left, to even fill the bottle at all. 89.999 degrees is in essence the  
 
-<h2 align="center"> ### Case: What If **s = b**? </h2>
+<h2 align="center"> Case: What If **s = b**? </h2>
 
 Logically, if **s = b**, then the water bottle will also be maximally filled. The assumption here is that the stream has a certain width, part of it fills the bottle while the other part spills over. If we restrict the conditions to be such that the stream is not allowed to spill over the bottle—a "straight shot" into the bottle—then the results will be different to the extent that if **s = b**, then 90 degrees will no longer be the optimal solution.  
 
