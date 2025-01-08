@@ -25,8 +25,9 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![Inspirational water bottle next to water fountain](https://github.com/user-attachments/assets/53125f25-e5c1-4dca-b533-1e3c03be17d2)  |  ![Abstraction of a water bottle where the dark blue edge is a further abstraction of the entire bottle](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) 
+![Inspirational water bottle next to water fountain](https://github.com/user-attachments/assets/0b7e196b-7f21-4e23-a68e-a539bacae7e7)  |  ![Abstraction of a water bottle where the dark blue edge is a further abstraction of the entire bottle](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) 
 
+![resized](https://github.com/user-attachments/assets/0b7e196b-7f21-4e23-a68e-a539bacae7e7)
 
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
