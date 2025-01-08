@@ -20,14 +20,15 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 ---
 
+
 <h2 align="center"> Background + Logic </h2>
 
-![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) 
+![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) , ![IMG_3920](https://github.com/user-attachments/assets/53125f25-e5c1-4dca-b533-1e3c03be17d2)
 
 
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
-![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476) ![IMG_3920](https://github.com/user-attachments/assets/abb7080f-8559-4852-8a9d-034e0ba354f8)
+![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476) 
 
 
 Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
