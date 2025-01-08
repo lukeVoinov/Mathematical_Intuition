@@ -43,13 +43,15 @@ When **s > b**, then, we can answer the question posed:
 Q: **What angle must a bottle be oriented at with respect to ground such that it will be maximally filled?**  
 A: At a **90-degree angle**!  
 
-We can rephrase the answer in quantitatively:  
-**If the height of the strema is greater than the height of the bottle, a bottle will always be filled maximally if it is at a 90-degree angle.**  
+We can rephrase the answer quantitatively:  
+**If the height of the stream is greater than the height of the bottle, a bottle will always be filled maximally if it is at a 90-degree angle.**  
 
 Further consideration will show an important corollary of this fact:  
-**The bottle will be filled to its fullest possible capacity the closer it is to being at a 90 degree angle with respect to the ground**  
+**The bottle will be filled to its fullest possible capacity the closer it is to being at a 90 degree angle with respect to the ground.**  
 
-The first statement is a specific instance of the general corollary. The bottle does indeed fill to its absolute possible capacity, L, at a 90 degree angle. What if we make the bottle very slightly higher than the stream? Then we must tilt the bottle very slightly, say 0.001 degrees to the left, to even fill the bottle at all. 89.999 degrees is in essence the  
+The first statement is a specific instance of the general corollary. The bottle does indeed fill to its absolute possible capacity, L, at a 90 degree angle. What if we make the bottle very slightly higher than the stream? Then we must tilt the bottle very slightly, say 0.001 degrees to the left, to fill the bottle at all. 89.999 degrees is in essence the same as 90 degrees and will thus fill, in essence, with L liters. However, though the differences are negligible, the titled bottle really has less water than the previous one becasue the tilted bottle will have some spill out. And there's no way around this - it will always have less water due to restirctions that result in titling. The point is that this bottle nearly achieves, and in essence does achieve, absoulte capacity at an angle that is essentially 90 degrees. While this is not a conclusiove proof of the corollary, it's a convincing logic. 
+
+Resulting from this discussion, we can also create a concept of "tilt" - a way to quantify how much tilting the bottle affects the bottle's capacity. This is much how ideas such as "potential" come about - they're useful symbols that we can manipulate to quantify how certain conditions affect objects. 
 
 <h2 align="center"> Case: What If **s = b**? </h2>
 
