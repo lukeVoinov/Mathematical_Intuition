@@ -23,8 +23,7 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 <h2 align="center"> Background + Logic </h2>
 
-                           |
-
+Water Bottle               |  Abstraction
 :-------------------------:|:-------------------------:
 ![Inspirational water bottle next to water fountain](https://github.com/user-attachments/assets/a1caf07d-178d-45ec-b85e-59482f9cf03e)  |  ![Abstraction of a water bottle where the dark blue edge is a further abstraction of the entire bottle](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) 
 
