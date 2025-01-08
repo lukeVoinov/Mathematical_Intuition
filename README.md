@@ -1,6 +1,6 @@
-# Maximizing Water Stored in a Bottle Tilted at an Angle
+<div align="center"> # Maximizing Water Stored in a Bottle Tilted at an Angle </div>
 
-## Story and Motivation
+<div align="center"> ## Story and Motivation </div>
 
 A few days ago I was at my school's gym playing the best game of badminton in my life when we decided to stop for a break. I went to the nearest water fountain to fill up y water bottle but encountered an obstacle: the only way I could fill my bottle was if I tilted it at an angle. This then led to water spilling out before the entire bottle could fill, leaving a substantial volume filled with air (insert photo of fountain, description "water fountain in gym").  
 
@@ -10,21 +10,22 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 ---
 
-## The Problem
+<div align="center"> ## The Problem </div>
 
-**Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled?**  
+<div align="center"> **Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled?** </div>
 
 ---
 
-## Background + Logic
+<div align="center">## Background + Logic </div>
 
-![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52)
-A water bottle, where the dark blue line is it abstracted as a line.
+<div align="center"> ![image](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) </div>
+
+<div align="center"> A water bottle, where the dark blue line is it abstracted as a line. </div>
 
 
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
-![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476)
+<div align="center"> ![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476) </div>
 
 Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
 
