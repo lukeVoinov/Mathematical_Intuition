@@ -2,7 +2,7 @@
 <h3 align="center">Maximizing Water Stored in a Bottle Tilted at an Angle </h3>
 
 
-<h2 align="center"> ## Story and Motivation </h2>
+<h2 align="center"> Story and Motivation </h2>
 
 A few days ago I was at my school's gym playing the best game of badminton in my life when we decided to stop for a break. I went to the nearest water fountain to fill up y water bottle but encountered an obstacle: the only way I could fill my bottle was if I tilted it at an angle. This then led to water spilling out before the entire bottle could fill, leaving a substantial volume filled with air (insert photo of fountain, description "water fountain in gym").  
 
