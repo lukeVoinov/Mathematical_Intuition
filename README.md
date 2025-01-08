@@ -1,12 +1,12 @@
 <h1 align="center"> Mathematical Intuition </h1>
-<h3 align="center">Maximizing Water Stored in a Bottle Tilted at an Angle </h3>
+<h4 align="center">Maximizing Water Stored in a Bottle Tilted at an Angle </h4>
 
 
 <h2 align="center"> Story and Motivation </h2>
 
 Some time ago I was at my school's gym playing a game of badminton when we decided to stop for a break. I went to the nearest water fountain to fill up my water bottle but encountered a problem: the only way I could fill my bottle was if I tilted it at an angle. This then led to water spilling out before the entire bottle could fill, leaving a substantial volume filled with air:
 
-![IMG_3923](https://github.com/user-attachments/assets/b80ab266-33b5-4354-aad9-8386394fa838)
+![IMG_3923](https://github.com/user-attachments/assets/5f2d0a93-6bfe-41d2-8041-3f0277522418)
 
 In computer science we are taught to implement efficient algorithms and data structures; to write efficient comments; to use AI to improve productivity. Entire studies on artificial intelligence and algorithms would be impossible to conduct without the foundational Big O notation. It is the job of colleges to engrain a desire for efficiency in their computer science students, which would explain the reason I set out to quantify how to optimize water storage under such conditions. Why make a second trip to the fountain where one would have sufficed?  
 
@@ -16,7 +16,7 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 <h2 align="center"> The Problem </h2>
 
-<h2 align="center"> Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled? </h2>
+<h4 align="center"> Given a water bottle, what angle must the bottle be oriented at with respect to the ground such that it will be maximally filled? </h4>
 
 ---
 
@@ -27,7 +27,8 @@ Whatever prompted me to do all this math and writing goes beyond just a simple a
 
 Imagine we have a water bottle that can store **L** liter of water, where **L** is the maximum the bottle can hold. Ideally, we always want it to be filled **L** liters. This can only happen if the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, eg)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
-![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476)
+![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476) ![IMG_3920](https://github.com/user-attachments/assets/abb7080f-8559-4852-8a9d-034e0ba354f8)
+
 
 Under these conditions, the watter bottle must be titled at some angle if any water is to enter. However, from physical observations, this will result in some of the water spilling out before the bottle can be filled with **L** liters.  
 
