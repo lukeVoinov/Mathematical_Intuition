@@ -49,21 +49,24 @@ We can rephrase the answer quantitatively:
 Further consideration will show an important corollary of this fact:  
 **The bottle will be filled to its fullest possible capacity the closer it is to being at a 90 degree angle with respect to the ground.**  
 
-The first statement is a specific instance of the general corollary. The bottle does indeed fill to its absolute possible capacity, L, at a 90 degree angle. What if we make the bottle very slightly higher than the stream? Then we must tilt the bottle very slightly, say 0.001 degrees to the left, to fill the bottle at all. 89.999 degrees is in essence the same as 90 degrees and will thus fill, in essence, with L liters. However, though the differences are negligible, the titled bottle really has less water than the previous one becasue the tilted bottle will have some spill out. And there's no way around this - it will always have less water due to restirctions that result in titling. The point is that this bottle nearly achieves, and in essence does achieve, absoulte capacity at an angle that is essentially 90 degrees. While this is not a conclusiove proof of the corollary, it's a convincing logic. 
 
-Resulting from this discussion, we can also create a concept of "tilt" - a way to quantify how much tilting the bottle affects the bottle's capacity. This is much how ideas such as "potential" come about - they're useful symbols that we can manipulate to quantify how certain conditions affect objects. 
+EDIT::
+The first statement is a specific instance of the general corollary. The bottle does indeed fill to its absolute possible capacity, L, at a 90 degree angle. What if we make the bottle very slightly higher than the stream? Then we must tilt the bottle very slightly, say 0.001 degrees to the left, to fill the bottle at all. 89.999 degrees is in essence the same as 90 degrees and will thus fill, in essence, with L liters. However, though the differences are negligible, the tilted bottle really has less water than the previous one because the tilted bottle will have some spill out. There's no way around this - it will always have less water due to restirctions that result in titling. The point is that this bottle nearly achieves, and in essence does achieve, absoulte capacity at an angle that is essentially 90 degrees. Because the next closest angle the water fills at is nearly 90 degrees, it would make sense to exptrapolate that the closer to 90 degrees the bottle is, the more it will hold. While this is not a conclusive proof of the corollary, it's a convincing logic. 
 
-<h2 align="center"> Case: What If **s = b**? </h2>
+From this discussion we can imagine a concept of "tilt" - a way to quantify how much tilting the bottle affects the bottle's capacity. This is much how ideas such as "potential" come about - they're useful symbols that we can manipulate to quantify how certain conditions affect objects. 
 
-Logically, if **s = b**, then the water bottle will also be maximally filled. The assumption here is that the stream has a certain width, part of it fills the bottle while the other part spills over. If we restrict the conditions to be such that the stream is not allowed to spill over the bottle—a "straight shot" into the bottle—then the results will be different to the extent that if **s = b**, then 90 degrees will no longer be the optimal solution.  
+<h2 align="center"> Case: What If s = b? </h2>
+
+Logically, if **s = b**, then the water bottle will also be maximally filled. The assumption here is that the stream has a certain width that we have up until now been ignoring. Part of it fills the bottle while the other part spills over. If we restrict the conditions to be such that the stream is not allowed to spill over the bottle—a "straight shot" into the bottle—then the results will be different to the extent that if **s = b**, then 90 degrees will no longer be the optimal solution.  
 
 ---
 
 <h2 align="center"> Incomplete Theory </h2>
 
-Our theory now covers a large portion of what angle a bottle must be leaned at such that it will be maximally filled with water. We know that if the height of the stream is either above or at the same height as that of the bottle, the bottle will maximally fill if it stands at a 90-degree angle with respect to the ground. If we only ever encounter water in such situations, then our theory is complete, and it would be difficult to even ask such a question in the first place.  
+Our theory now covers a large portion of what angle a bottle must be leaned at such that it will be maximally filled with water. We know that if the height of the stream is either above or at the same height as that of the bottle, the bottle will maximally fill if it stands at a 90-degree angle with respect to the ground. If we only ever encounter water in such situations, then our theory is complete, and it would be difficult in the first place to ask the question we posed. Why inquire of something so obvious and what can we do with the answer?  
 
 ![image](https://github.com/user-attachments/assets/01429f4e-7090-4d23-a860-6ade80430478)
+pic is wrong!
 
 However, when I was filling my water bottle, I encountered the scenario where my bottle was taller than the stream.  
 
