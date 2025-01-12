@@ -87,7 +87,7 @@ A partial explanation would be:
 This partial explanation then limits what values we should expect to detect when **s < b** and describes that the general behavior of the bottle under the condition **s < b** is to have a lower capacity than in the previous conditions. The usefulness of limiting possible theoretical explanations can be seen in the following example. Suppose there were cavemen who lived in an environment surrounded by mountains and these cavemen wanted to know why there is wind. One theory could propose that there are giants beyond the mountains whose job is produce wind by blowing. Anothr theory could be the theory we currently hold of wind. For the cavemen, both theories could be equally vaild - they have no way to acquire data to prove one or the other. If, however, the cavement somehow produced a partial explanation that wind is produced inorganically, they would drop the giant-wind theory. Such a theory strays beyond reasonably established bounds that narrow onto the truth. Classification "models" used in artificial intelligence are an excellent visalization of how data affect theories, models.
 
 ![image](https://github.com/user-attachments/assets/da07a87d-b1d6-4c0f-b486-e15f7f18ec5d)
-https://www.infodiagram.com/slides/classification-model-challenges-under-fitting-over-fitting/
+"Classification Model Challenges, Under-fitting, Over-fitting." infoDiagram, www.infodiagram.com/slides/classification-model-challenges-under-fitting-over-fitting/. 
 
 
 ---
