@@ -132,7 +132,7 @@ This is of the same essence as the Intermediate Value Theorem. It is easy to see
 
 Now I return to answering the question posed. 
 
-The water will be shot as a parabola. To fill maximally, a bottle must be tilted such that the bottle's edge intersects the parabola's maximum. To see why, return to the previously corollary: the more upright a bottle is, the more water it can store, if the bottle is filled from a point any lower than the highest point in the parabloa, it is forcing itself to tilt more than needed, thus automatically being excluded from being maximally filled.
+The water will be shot as a parabola. To fill maximally, a bottle must be tilted such that the bottle's edge intersects the parabola's maximum. To see why, return to the corollary: the more upright a bottle is, the more water it can store. If the bottle is filled from a point any lower than the highest point in the parabloa, it is forcing itself to tilt more than needed, thus automatically being excluded from being maximally filled.
 
 ![image](https://github.com/user-attachments/assets/6f277f45-e51d-4a1d-9a20-12a3c20105bb)
 
