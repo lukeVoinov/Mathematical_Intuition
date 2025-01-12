@@ -1,5 +1,5 @@
 <h1 align="center"> Mathematical Intuition </h1>
-<h4 align="center">Maximizing Water Stored in a Bottle Tilted at an Angle </h4>
+<h1 align="center">Maximizing Water Stored in a Bottle Tilted at an Angle </h1>
 
 
 <h2 align="center"> Story and Motivation </h2>
@@ -8,7 +8,7 @@ Some time ago I was at my school's gym playing a game of badminton when we decid
 
 ![IMG_3923](https://github.com/user-attachments/assets/5f2d0a93-6bfe-41d2-8041-3f0277522418)
 
-In computer science we are taught to implement efficient algorithms and data structures; to write efficient comments; to use AI to improve productivity. Entire studies on artificial intelligence and algorithms would be impossible to conduct without the foundational Big O notation. It is the job of colleges to engrain a desire for efficiency in their computer science students, which would explain the reason I set out to quantify how to optimize water storage under such conditions. Why make a second trip to the fountain where one would have sufficed?  
+In computer science we are taught to implement efficient algorithms and data structures; to write efficient comments; to use AI to improve productivity. Entire studies of algorithms would be impossible to conduct without the foundational Big O notation. It is the job of colleges to engrain a desire for efficiency in their computer science students, which would explain the reason I set out to quantify how to optimize water storage under titled conditions. Why make a second trip to the fountain where one would have sufficed?  
 
 Whatever prompted me to do all this math and writing goes beyond just a simple annoyance: I wanted to do this project to try and understand what it looks like when physicists employ (albeit at a much more sophisticated level) critical and creative thinking. I also wanted to prove to myself that I am not wasting time in school: that I have learned something, in the first place, and that I am able to apply that something. This project is a very nice way to demonstrate (what seems to me) the conceptual process of a physicist without making it too complex or detached from personal experience. This project acted as a fun logic puzzle that demonstrated to me that I am actually able to apply what I have learned. I discuss some takeaways in the Conclusions section.  
 
@@ -28,7 +28,7 @@ Water Bottle               |  Abstraction
 ![Inspirational water bottle next to water fountain](https://github.com/user-attachments/assets/43aeba15-0f60-4272-b58b-d999ea3bdf1d)  |  ![Abstraction of a water bottle where the dark blue edge is a further abstraction of the entire bottle](https://github.com/user-attachments/assets/049c5155-43f6-4788-9462-692b599eab52) 
 
 
-Imagine we have a water bottle that can store **L** liters of water, where **L** is the maximum the bottle can hold. Ideally, we want it to be filled **L** liters. We know from experimental (in essence personal) that this happens when the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved (no cups, e.g.)). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
+Imagine we have a water bottle that can store **L** liters of water, where **L** is the absolute maximum the bottle can hold. Ideally, we want it to be filled **L** liters. We know from experimental (in essence personal) observation that this happens when the maximum height of the stream is greater than the height of the bottle (only the fountain and bottle are involved - no cups, e.g.). If the maximum height of the stream, which I will from now on refer to as the height of the stream, is less than the height of the bottle, it will splash against the side of the bottle and never get in.  
 
 ![image](https://github.com/user-attachments/assets/a349503b-9efc-430c-9e74-7a70d4a3b476) 
 
@@ -49,24 +49,23 @@ We can rephrase the answer quantitatively:
 Further consideration will show an important corollary of this fact:  
 **The bottle will be filled to its fullest possible capacity the closer it is to being at a 90 degree angle with respect to the ground.**  
 
+The first statement is a specific instance of the general corollary. This statement makes intuitive sense - the less the bottle is tilted, the less water will spill out. The bottle is least titled at a 90 degree angle, and we know that this is the absolute maximum amount of water the bottle can hold.
 
-EDIT::
-The first statement is a specific instance of the general corollary. The bottle does indeed fill to its absolute possible capacity, L, at a 90 degree angle. What if we make the bottle very slightly higher than the stream? Then we must tilt the bottle very slightly, say 0.001 degrees to the left, to fill the bottle at all. 89.999 degrees is in essence the same as 90 degrees and will thus fill, in essence, with L liters. However, though the differences are negligible, the tilted bottle really has less water than the previous one because the tilted bottle will have some spill out. There's no way around this - it will always have less water due to restirctions that result in titling. The point is that this bottle nearly achieves, and in essence does achieve, absoulte capacity at an angle that is essentially 90 degrees. Because the next closest angle the water fills at is nearly 90 degrees, it would make sense to exptrapolate that the closer to 90 degrees the bottle is, the more it will hold. While this is not a conclusive proof of the corollary, it's a convincing logic. 
-
-From this discussion we can imagine a concept of "tilt" - a way to quantify how much tilting the bottle affects the bottle's capacity. This is much how ideas such as "potential" come about - they're useful symbols that we can manipulate to quantify how certain conditions affect objects. 
+From this corollary we can imagine a concept of "tilt" - a way to quantify how much tilting the bottle affects the bottle's capacity. This is much how ideas such as "potential" come about - they're useful symbols that we can manipulate to quantify how certain conditions affect objects. 
 
 <h2 align="center"> Case: What If s = b? </h2>
 
-Logically, if **s = b**, then the water bottle will also be maximally filled. The assumption here is that the stream has a certain width that we have up until now been ignoring. Part of it fills the bottle while the other part spills over. If we restrict the conditions to be such that the stream is not allowed to spill over the bottle—a "straight shot" into the bottle—then the results will be different to the extent that if **s = b**, then 90 degrees will no longer be the optimal solution.  
+We must also examine an edge-case (literally): what if the stream is the same height as the bottle? Logically, if **s = b**, the water bottle will also be maximally filled. The assumption here is that the stream has a certain width that we have up until now been ignoring. Part of it fills the bottle while the other part spills over. If we restrict the conditions to be such that the stream is not allowed to spill over the bottle—a "straight shot" into the bottle—then the results will be different to the extent that if **s = b**, then 90 degrees will no longer be the optimal solution.  
 
 ---
 
 <h2 align="center"> Incomplete Theory </h2>
 
-Our theory now covers a large portion of what angle a bottle must be leaned at such that it will be maximally filled with water. We know that if the height of the stream is either above or at the same height as that of the bottle, the bottle will maximally fill if it stands at a 90-degree angle with respect to the ground. If we only ever encounter water in such situations, then our theory is complete, and it would be difficult in the first place to ask the question we posed. Why inquire of something so obvious and what can we do with the answer?  
+Our theory now covers a large portion of what angle a bottle must be tilted at such that it will be maximally filled with water. We know that if the height of the stream is either above or at the same height as that of the bottle, the bottle will maximally fill if it stands at a 90-degree angle with respect to the ground. If we only ever encounter water in such situations, then our theory is complete, and it would be difficult in the first place to ask the question we posed. Why inquire of something so obvious and what can we do with the answer?  
 
-![image](https://github.com/user-attachments/assets/01429f4e-7090-4d23-a860-6ade80430478)
-pic is wrong!
+
+<img width="619" alt="image" src="https://github.com/user-attachments/assets/4ca281ff-e1d0-4a65-b06e-037c1c1d6822" />
+
 
 However, when I was filling my water bottle, I encountered the scenario where my bottle was taller than the stream.  
 
